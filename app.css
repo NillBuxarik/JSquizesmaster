@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+h2	{
+    background: rgb(255, 205, 213);
+    padding: 14px;
+    border-radius: 10px;
+}
 
 .container {
     max-width: 1280px;
@@ -15,11 +20,6 @@
     padding: 40px;
 }
 
-.block > h2 {
-    background: rgb(255, 205, 213);
-    padding: 14px;
-    border-radius: 10px;
-}
 
 .block > p {
     color: rgb(90, 51, 90);
@@ -68,7 +68,13 @@
     left: 0;
     background: rgba(0,0,0,0.5); /* цвет фона */
     z-index: 1050;
-    
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    padding: 0;
+    z-index: 9999999;
 }
 
 .modal:target {
@@ -86,7 +92,12 @@
     left: 0;
     background: rgba(0,0,0,0.5); /* цвет фона */
     z-index: 1050;
-    
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    padding: 0;
 }
 
 .modal1:target {
@@ -165,18 +176,25 @@
     align-items: center;
     margin: 10px 0px;
 }
-
-.place__header > p {
-    border-right: 2px solid #cecece;
+.titles{
+	background: #fff;
+    box-shadow: 1px 1px 7px #b5b5b5;
+    padding: 40px;
+}
+.head__content{
+	 border-right: 2px solid #cecece;
     padding-right: 30px;
     font-size: 20px;
+	
+	
 }
 
-.place__header > footer__content {
+.quiz__footer {
     background: #9670ba;
     color: #fff;
     padding: 10px;
     font-weight: 700;
+	width-left: 0px;
 }
 
 .place__body {
@@ -204,20 +222,18 @@
     padding: 0px 20px;
 }
 
-.quiz__footer 
-{
-	position: absolute;
-	bottom: 0;
-	display: block;
-	width: 100%;
+.timer {
+    font-size: 20px;
+    color: #fff;
 }
 
-.footer__content 
-{
-	padding: 5px;
+.place__back {
+    padding: 8px 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
-.button> div {
+.place__circle > div {
     box-shadow: 0px 0px 7px #cecece;
     width: 500px;
     height: 75px;
@@ -227,6 +243,25 @@
     justify-content: space-between;
     padding: 0px 10px;
     align-items: center;
+}
+
+.pl__circle {
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+    background: #785a95;
+}
+
+.buttons__content> div {
+    box-shadow: 0px 0px 7px #cecece;
+    width: 500px;
+    height: 75px;
+    margin: 50px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    
 }
 
 .button_wrong 
