@@ -187,6 +187,34 @@ const questions =
 		new Answer("2", 0),
 		new Answer("3", 1),
 		new Answer("4", 0)
+	]),
+	new Question("2 + 2 = ", 
+	[
+		new Answer("2", 0),
+		new Answer("3", 0),
+		new Answer("4", 1),
+		new Answer("0", 0)
+	]),
+	new Question("2 + 2 = ", 
+	[
+		new Answer("2", 0),
+		new Answer("3", 0),
+		new Answer("4", 1),
+		new Answer("0", 0)
+	]),
+	new Question("2 + 2 = ", 
+	[
+		new Answer("2", 0),
+		new Answer("3", 0),
+		new Answer("4", 1),
+		new Answer("0", 0)
+	]),
+	new Question("2 + 2 = ", 
+	[
+		new Answer("2", 0),
+		new Answer("3", 0),
+		new Answer("4", 1),
+		new Answer("0", 0)
 	])
 ];
 
