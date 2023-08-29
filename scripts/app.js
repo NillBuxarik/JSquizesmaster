@@ -141,52 +141,59 @@ const results =
 //Массив с вопросами
 const questions = 
 [
-	new Question("2 + 2 = ", 
+	new Question("Какой сегодня день недели? ", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
+		new Answer("Понедельник", 0),
+		new Answer("Вторник", 1),
+		new Answer("Среда", 0),
+		new Answer("Четверг", 0)
 	]),
 
-	new Question("2 * 2 = ", 
+	new Question("Какой следующий год? ", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
+		new Answer("2023", 0),
+		new Answer("2025", 0),
+		new Answer("2024", 1),
+		new Answer("2030", 0)
 	]),
 
-	new Question("2 / 2 = ", 
+	new Question("На каком ты курсе? ", 
 	[
-		new Answer("0", 0),
+		new Answer("4", 0),
 		new Answer("1", 1),
 		new Answer("2", 0),
 		new Answer("3", 0)
 	]),
 
-	new Question("2 - 2 = ", 
+	new Question("Что у хоббита в карманах? ", 
 	[
-		new Answer("0", 1),
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 0)
+		new Answer("кольцо", 1),
+		new Answer("носки", 0),
+		new Answer("печенька", 0),
+		new Answer("АВП", 0)
 	]),
 
-	new Question("2 + 2 * 2 = ", 
+	new Question("Какая из следующих планет является самой большой в Солнечной системе?", 
 	[
-		new Answer("4", 0),
-		new Answer("6", 1),
-		new Answer("8", 0),
-		new Answer("10", 0)
+		new Answer("Марс", 0),
+		new Answer("Венера", 0),
+		new Answer("Юпитер", 1),
+		new Answer("Уран", 0)
 	]),
 
-	new Question("2 + 2 / 2 = ", 
+	new Question("Какой город является столицей Франции? ", 
 	[
-		new Answer("1", 0),
-		new Answer("2", 0),
-		new Answer("3", 1),
-		new Answer("4", 0)
+		new Answer("Брюсель", 0),
+		new Answer("Оренбург", 0),
+		new Answer("Париж", 1),
+		new Answer("Асгард", 0)
+	]),
+	new Question("Расшифровка ООП - ", 
+	[
+		new Answer("Оркестр оригинальных поваров", 0),
+		new Answer("Объект опечатанный полицией", 0),
+		new Answer("Объектно ориентированное программирование", 1),
+		new Answer("Отлично отчищенный пудинг", 0)
 	]),
 	new Question("2 + 2 = ", 
 	[
@@ -195,26 +202,19 @@ const questions =
 		new Answer("4", 1),
 		new Answer("0", 0)
 	]),
-	new Question("2 + 2 = ", 
+	new Question("Какой цвет из перечисленных обычно ассоциируется с солнцем и радостью?", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
+		new Answer("Синий", 0),
+		new Answer("Зелёный", 0),
+		new Answer("Жёлтый", 1),
+		new Answer("Розовый", 0)
 	]),
-	new Question("2 + 2 = ", 
+	new Question("Какое из перечисленных животных является хищником и обычно имеет рыжую шерсть?", 
 	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
-	]),
-	new Question("2 + 2 = ", 
-	[
-		new Answer("2", 0),
-		new Answer("3", 0),
-		new Answer("4", 1),
-		new Answer("0", 0)
+		new Answer("Слон", 0),
+		new Answer("Зебра", 0),
+		new Answer("Тигр", 1),
+		new Answer("Жираф", 0)
 	])
 ];
 
